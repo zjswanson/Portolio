@@ -18,10 +18,29 @@ Route::group(['middleware' => ['web']], function () {
     /**
      * Show Task Dashboard
      */
+    // Route::get('/', function () {
+    //     return view('tasks', [
+    //         'tasks' => Task::orderBy('created_at', 'asc')->get()
+    //     ]);
+    // });
+
+    /**
+     * Home view
+     */
     Route::get('/', function () {
-        return view('tasks', [
-            'tasks' => Task::orderBy('created_at', 'asc')->get()
-        ]);
+        return view('home');
+    });
+    /**
+     * does this work
+     */
+    Route::get('/resume', function () {
+        return view('resume');
+    });
+    /**
+     * does this work
+     */
+    Route::get('/project', function () {
+        return view('project');
     });
 
     /**

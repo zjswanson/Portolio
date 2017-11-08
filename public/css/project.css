@@ -1,0 +1,28 @@
+.container {
+    margin-top: 25px;
+}
+
+.card>img {
+    min-height: 200px;
+}
+
+.card.feature {
+    min-height: 300;
+}
+
+@media screen and (min-width: 768px) {
+    .container {
+        margin-top: 50px;
+    }
+
+
+    .card.feature,
+    .card.detail {
+        min-height: 500px;
+    }
+
+    .card img {
+        min-height: 300px;
+    }
+
+}

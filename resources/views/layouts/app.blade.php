@@ -12,9 +12,13 @@
     <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700" rel='stylesheet' type='text/css'>
 
     <!-- Styles -->
-    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
-    {{-- <link href="{{ elixir('css/app.css') }}" rel="stylesheet"> --}}
-
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/popper.js" type="text/javascript"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./css/index.css">
+    <link href="{{ asset('/css/index.css') }}" rel="stylesheet">
+    @yield('headSection')
     <style>
         body {
             font-family: 'Lato';
@@ -26,24 +30,32 @@
     </style>
 </head>
 <body id="app-layout">
-    <nav class="navbar navbar-default">
-        <div class="container">
-            <div class="navbar-header">
-
-                <!-- Branding Image -->
-                <a class="navbar-brand" href="{{ url('/') }}">
-                    Task List
-                </a>
-            </div>
-
-        </div>
+    <nav class="navbar navbar-expand-sm navbar-light bg-light">
+      <a class="navbar-brand ml-3" href="#">ZjS</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav pr-3 mr-3 ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="/">Features</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      Projects
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                          <a class="dropdown-item" href="/project">Action</a>
+                          <a class="dropdown-item" href="/project">Another action</a>
+                          <a class="dropdown-item" href="/project">Something else here</a>
+                      </div>
+                  </li>
+                  <li class="nav-item">
+                  <a class="nav-link" href="/resume">Resume</a>
+                </li>
+            </ul>
+      </div>
     </nav>
 
-    @yield('content')
-
-    <!-- JavaScripts -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-    {{-- <script src="{{ elixir('js/app.js') }}"></script> --}}
+        @yield('content')
 </body>
 </html>

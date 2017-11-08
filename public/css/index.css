@@ -1,0 +1,24 @@
+.container {
+    margin-top: 25px;
+}
+
+.display-box {
+    height: 200px;
+}
+
+.display-box h1 {
+    position: relative;
+    top: 35%;
+    transform: translateY(-50%);
+}
+
+@media screen and (min-width: 768px) {
+    .container {
+        margin-top: 50px;
+    }
+
+    .display-box {
+        height: 60vh;
+    }
+
+}
