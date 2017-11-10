@@ -1,3 +1,30 @@
+body {
+    background-color: #FCFAF4;
+    color: #2f4858;
+}
+
+.display {
+    font-family: 'Roboto', sans-serif;
+}
+
+#app-layout .navbar {
+    background-color: #2F4858;
+    color: #FCFAF4;
+}
+
+#app-layout .navbar a {
+    color: #FCFAF4;
+}
+
+#app-layout .navbar .dropdown-menu a {
+    color: #2f4858;
+}
+
+.card {
+    border-color: #5F758E;
+    background-color: rgba(255, 255, 255, .7);
+}
+
 .container {
     margin-top: 25px;
 }

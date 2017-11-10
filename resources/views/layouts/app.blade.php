@@ -9,15 +9,14 @@
 
     <!-- Fonts -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css" rel='stylesheet' type='text/css'>
-    <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700" rel='stylesheet' type='text/css'>
+    <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700|Life+Savers|Roboto" rel='stylesheet' type='text/css'>
 
     <!-- Styles -->
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/popper.js" type="text/javascript"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="./css/index.css">
-    <link href="{{ asset('/css/index.css') }}" rel="stylesheet">
+    <link rel="stylesheet" href="../../css/index.css">
     @yield('headSection')
     <style>
         body {
@@ -30,7 +29,7 @@
     </style>
 </head>
 <body id="app-layout">
-    <nav class="navbar navbar-expand-sm navbar-light bg-light">
+    <nav class="navbar navbar-expand-sm">
       <a class="navbar-brand ml-3" href="/">ZjS</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span>
       </button>
